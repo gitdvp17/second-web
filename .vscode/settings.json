@@ -20,5 +20,8 @@
         "tab.activeBorder": "#65c89b"
     },
     "peacock.color": "#42b883",
-    "peacock.affectTabActiveBorder": true
+    "peacock.affectTabActiveBorder": true,
+    "cSpell.words": [
+        "Influencers"
+    ]
 }
