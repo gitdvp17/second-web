@@ -265,19 +265,20 @@ html, body {
     }
 
     .content{
+        display: flex;
         height: calc(100% - 60px) ;
         flex-direction: column;
     }
 
     .side_content{
         margin-top: 40px;
-        width: 100%;
+        width: 40%;
         height: 50% ;
         padding: 4vw 6vw;
     }
 
     .right_content{
-        width: 100%;
+        width: 60%;
         height: 50%;
     }
 
