@@ -6,7 +6,7 @@
 }
 
 html, body {
-    height: 70vw;
+    height: 100vw;
     width: 100%;
 }
 
@@ -265,7 +265,6 @@ html, body {
 
     .content{
         display: flex;
-        flex-direction: column;
         height: 100% ;
         width: 100%;
     }
@@ -273,13 +272,13 @@ html, body {
     .side_content{
         margin-top: 40px;
         width: 30%;
-        height: 700% ;
+        height: 100% ;
         padding: 4vw 6vw;
     }
 
     .right_content{
         width: 70%;
-        height: 700%;
+        height: 100%;
     }
 
     .side_content h1{
