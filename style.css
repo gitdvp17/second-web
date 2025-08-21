@@ -79,7 +79,7 @@ html, body {
     background-color: #FF4060;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-weight: 600;
 }
 
@@ -115,7 +115,6 @@ html, body {
 }
 
 .menu-links button {
-  padding: 8px 16px;
   border: none;
   /*background: #ff9800;*/
   color: #fff;
@@ -162,7 +161,9 @@ html, body {
 }
 
 .side_content p{
-    font-size: 1.2vw;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: .8vw;
+    font-style: italic;
     font-weight: 600;
     color: #666;
     width: 80%;
@@ -171,24 +172,171 @@ html, body {
 }
 
 .content button{
-    font-size: 1.2vw ;
-    padding: 1.1vw 2.1vw;
+    font-size: 1vw ;
+    padding: 1.1vw 2vw;
     background-color: #FF4060 ;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     font-weight: 700;
 }
 
+
 .right_content{
-    height: 100%;
-    width: 70%;
-}
+    display: grid;
+    grid-template-columns: minmax(300px, 3fr) minmax(120px, 1fr) minmax(120px, 1fr);
+    grid-template-rows:   1fr; /* or 'auto auto' depending on content */
+    width: 100%;  
+    /*height: calc(100% - 22px);*/
+    column-gap: 20px;
+} 
 
 .right_content img{
     height: 100% ;
     width: 100%;
 }
+
+.r_grid_1{
+    display: grid;
+    /*
+    background-color: #d48610;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; */
+    width: 100%;
+    height: 100%;
+}
+
+.r_first_panel{
+/*    margin: 2vw;*/
+    display: flex;
+    flex-direction: column;
+    /*
+     background-color: white;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;*/
+    width: 100%;
+    height: 100%;
+    align-self: stretch;  /* makes it fill grid cell vertically */
+    justify-self: stretch; /* makes it fill grid cell horizontally */
+    text-align: left;
+    align-items: center;
+    /*justify-content: center;*/
+    background-image: url(/images/view-clear-water-with-splash-effect.jpg);
+ 
+   /* margin-top: .4vw;
+    object-fit: cover; */
+}
+
+.r_first_panel .mission_stmt{
+     font-size: 1.8vw;
+    line-height: 2vw;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 140px;
+}
+
+.r_first_panel p{
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: .9vw;
+    font-style: italic;
+    font-weight: 600;
+    color: #666;
+    width: 80%;
+    /*margin-top: 1.5vw;
+    margin-bottom: 3vw;*/
+    line-height: 1 2vw;
+    text-align: justify;
+    text-align-last: left;
+}
+
+
+.r_first_panel p span{
+    /*color: cyan;  */
+    font-size: 1.2vw;
+  font-weight: 1400;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff0844, #ffb199);
+ /* background-image: linear-gradient(to top, #bd5b5b 100%, #b40d50 100%);*/
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+
+.r_grid_2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    /*margin: 2vw;*/
+    row-gap: 20px;
+    background-color: #7a4599;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.r_second_panel{
+    background-color: #a82d2d;
+    color: #53bd64;
+    /*margin: 2vw;*/
+    text-align: center;
+     background-color: white;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.r_third_panel{
+    color: #2c0c9e;
+    /*margin: 2vw;*/
+    text-align: center;
+    background-color: white;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.r_grid_3{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: #45995e;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.r_fourth_panel{
+    background-color: #a82d2d;
+    /*margin: 2vw;*/
+    text-align: center; 
+     background-color: white;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.r_fifth_panel{
+    background-color: yellow;
+    /*margin: 2vw;*/
+    text-align: center;
+     background-color: white;
+    border: 2px solid #333;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Footer section */
 
@@ -336,6 +484,11 @@ margin: 10px auto 10px auto;
         height: 60px;
     }
 
+    #nav-logo i{
+    font-size: 4vw;
+    font-weight: 700;
+}
+
     .nav h2{
         font-size: 6vw;
         padding: 0 5vw;
@@ -377,7 +530,7 @@ margin: 10px auto 10px auto;
   }
 
   .menu-links button {
-    margin-top: 10px;
+    margin-top: 0px;
     /*background: #ff9800;*/
     background-color: #ff8177;
     color: white;
@@ -388,7 +541,8 @@ margin: 10px auto 10px auto;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-    font-size: .8rem;
+    font-size: 5vw;
+    
   }
 
   .nav-part2 i {
@@ -536,7 +690,6 @@ margin: 10px auto 10px auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   text-decoration: none;
   font-weight: 800;
 }
