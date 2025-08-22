@@ -137,7 +137,7 @@ html, body {
     grid-template-areas: "a b c d";
     height: calc(100% - 100px);
     width: 100%;
-    column-gap: 2vw;
+    gap: 1rem;
     position: relative;
    background: linear-gradient(to bottom, rgba(240,249,255,1) 0%,rgba(203,235,255,1) 47%,rgba(161,219,255,1) 100%);
     /*background-image: url(./images/waves-3.png);
@@ -449,6 +449,14 @@ margin: 0px auto 10px auto;
   font-weight: 1400;
 }
 
+@media (max-width: 900px) {
+  .my-grid {
+    grid-template-columns: 
+      minmax(200px, 1fr) 
+      minmax(200px, 1fr);
+  }
+}
+
 @media (max-width:600px) {
 
 /*html, body {
@@ -566,6 +574,7 @@ margin: 0px auto 10px auto;
        flex-direction: column; /* Stack vertically on mobile */
         justify-content: flex-start; /* Adjust centering for mobile */
         padding: 2rem 1rem;   
+         grid-template-columns: 1fr;
     }
 
     .side_content{
