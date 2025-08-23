@@ -610,7 +610,7 @@ html, body {
 .s_grid{
     margin-top: 5px;
     justify-content: space-around;
-    height: 100%; 
+    height: 50%; 
     width: 100%;
     padding: 5px 5px;
 }
@@ -639,7 +639,7 @@ html, body {
 .r_grid_1{
      margin-top: 5px;
     justify-content: space-around;
-    height: 100%; 
+    height: 50%; 
     /*width: 100%;*/
     padding: 5px 5px;
    /* padding-left: 5px;
