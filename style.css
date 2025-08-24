@@ -18,6 +18,11 @@ html, body {
   margin: 0;
 }
 
+h1 span {
+  color: #FF4060;
+  font-weight: 600;
+}
+
 .main {
   display: flex;
   flex-direction: column;
