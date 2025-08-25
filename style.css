@@ -299,7 +299,7 @@ margin-top: 20px;
   color: #fff;
   padding: 2rem;
   font-family: Arial, sans-serif;
-  height: 50px;
+  height: auto;
 }
 
 .footer_items {
@@ -313,7 +313,7 @@ margin-top: 20px;
 
 .footer_links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 0.5rem;
   min-width: 150px;
 }
@@ -424,5 +424,8 @@ margin-top: 20px;
     align-items: flex-start; /* aligns links to left */
   }
 
+  .social_media {
+height: 50px;
+}
 
 }

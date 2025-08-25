@@ -53,39 +53,27 @@
   font-size: 2rem;
 }
 
-.nav-part2 {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  position: relative;
+.home-icon {
+  margin-top: 15px;
+  text-align: center;
 }
 
-.menu-links {
-  display: flex;
+.home-icon a {
+  display: inline-flex;
   align-items: center;
-  gap: 1.5rem;
-}
-
-.menu-links h4 a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  background: linear-gradient(to top, #ff0844, #ffb199);
+  -webkit-background-clip: text;   /* clips bg to text shape */
+  -webkit-text-fill-color: transparent; /* makes the text take bg as color */
+  background-clip: text;           /* for Firefox */
+  color: transparent;              /* fallback */
+  /*color: #059669;*/
+  font-weight: bold;
+  font-size: 1.5rem; /* optional: adjust size */
 }
 
-.menu-links button {
-  padding: .5rem 1rem;
-  background-color: #FF4060;
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-}
-
-.nav-part2 i {
-  font-size: 1.5rem;
-  display: none;
-  color: white;
-  cursor: pointer;
+.home-icon svg {
+  margin-right: 6px;
 }
 
         .contact-container {
@@ -262,16 +250,14 @@
   color: #fff;
 }
 
-
-
 .social_media {
   background: black;
   padding: .5rem;
   text-align: center;
   width: 100vw; /* Full viewport width */
     margin: 0;
-    box-sizing: border-box;
-    border-top: 2px solid #333;
+   /* box-sizing: border-box;
+    border-top: 2px solid #333;*/
 }
 .social_icons {
   display: flex;
