@@ -19,6 +19,28 @@
   <style></style>
 </head>
 <body>
+
+    
+    <!-- Nav Section -->
+    <nav class="nav">
+      <a href="/" id="nav-logo" class="logo">
+        <i class="fas fa-gem"></i> Waves
+      </a>
+      <div class="nav-part2">
+        <div class="menu-links">
+          <h4><a href="/services.html" class="navbar_links">Services</a></h4>
+          <h4><a href="/products.html" class="navbar_links">Products</a></h4>
+          <h4><a href="/installations.html" class="navbar_links">Installations</a></h4>
+          <h4><a href="/contact_us.html" class="navbar_links">Contact Us</a></h4>
+          <button>Sign In</button>  
+        </div>   
+        <i class="ri-menu-3-fill hamburger-toggle"></i>         
+      </div>
+    </nav>
+    
+<div class="main">
+
+
     <div class="contact-container">
         <div class="contact-header">
             <h1>Contact <span>Us</span></h1>
@@ -98,78 +120,65 @@
                 
                 <div id="statusMessage"></div>
             </form>
-        </div>
+      </div>     
+    </div>
+</div>
+         <!-- Footer -->
+  <footer class="footer">
+  <div class="footer_items">
+    <div class="footer_links">
+      <h4>About Us</h4>
+      <a href="#">Organization</a>
+      <a href="#">Testimonials</a>
+      <a href="#">Area of operations</a>
+      <a href="#">How we work</a>
     </div>
 
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const button = this.querySelector('.submit-btn');
-            const statusDiv = document.getElementById('statusMessage');
-            const formData = new FormData(this);
-            
-            // Clear previous status
-            statusDiv.innerHTML = '';
-            
-            // Show loading state
-            button.textContent = 'Sending...';
-            button.disabled = true;
-            button.style.background = 'linear-gradient(135deg, #6b7280 0%, #4b5563 100%)';
-            
-            // Send to FormSpree
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw new Error('Network response was not ok');
-                }
-            })
-            .then(data => {
-                // Success
-                button.classList.add('success-animation');
-                button.textContent = 'Message Sent!';
-                button.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                
-                statusDiv.innerHTML = '<div class="status-message success">✅ Thank you! Your message has been sent successfully. We\'ll get back to you soon!</div>';
-                
-                this.reset();
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                button.textContent = 'Send Message';
-                button.style.background = 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)';
-                
-                statusDiv.innerHTML = '<div class="status-message error">❌ There was an error sending your message. Please try again or contact us directly.</div>';
-            })
-            .finally(() => {
-                button.disabled = false;
-                setTimeout(() => {
-                    button.classList.remove('success-animation');
-                    button.textContent = 'Send Message';
-                    button.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-                }, 3000);
-            });
-        });
+    <div class="footer_links">
+      <h4>Contact Us</h4>
+      <a href="#">Contact Details</a>
+      <a href="#">Technical Resources</a>
+      <a href="#">Sponsorships</a>
+    </div>
 
-        // Add interactive hover effects
-        const inputs = document.querySelectorAll('input, select, textarea');
-        inputs.forEach(input => {
-            input.addEventListener('focus', function() {
-                this.parentElement.parentElement.style.transform = 'translateX(5px)';
-            });
-            
-            input.addEventListener('blur', function() {
-                this.parentElement.parentElement.style.transform = 'translateX(0)';
-            });
-        });
-    </script>
+    <div class="footer_links">
+      <h4>Our Partners</h4>
+      <a href="#">Product Ambassadors</a>
+      <a href="#">Social Influencers</a>
+      <a href="#">Agency</a>
+    </div>
+
+    <div class="footer_links">
+      <h4>Social Media</h4>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">YouTube</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="social_media"> 
+      <div class="social_media--wrap">
+        <div class="social_logo">
+          <a href="/" id="social-logo">
+            <i class="fas fa-gem"></i> <span>Waves</span>
+          </a>
+        </div>
+        <p class="website_right">@KiwiTech 2025. All rights reserved.</p>
+        <div class="social_icons">
+          <a href="/" class="social_icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="/" class="social_icon--link" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="/" class="social_icon--link" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="/" class="social_icon--link" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>          
+  </div>
+
+
+    <script src="app-contact-us.js"></script>
 </body>
+
 </html>
