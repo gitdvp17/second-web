@@ -1,0 +1,176 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+              margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+           /* align-items: center;
+            justify-content: center;
+            padding: 20px;*/
+            overflow-x: hidden;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            justify-content: center;   /* center horizontally */
+            align-items: center;       /* center vertically */
+            min-height: calc(100vh - 300px); 
+            /* 100vh minus estimated footer height, so footer still shows */
+            padding: 2rem 1rem;
+            box-sizing: border-box;
+            padding-top: 30px;
+        }
+
+.nav {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+#nav-logo {
+  background-image: linear-gradient(to top, #ff0844, #ffb199);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#nav-logo i {
+  margin-right: .5rem;
+  font-size: 2rem;
+}
+
+.home-icon {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.home-icon a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  background: linear-gradient(to top, #ff0844, #ffb199);
+  -webkit-background-clip: text;   /* clips bg to text shape */
+  -webkit-text-fill-color: transparent; /* makes the text take bg as color */
+  background-clip: text;           /* for Firefox */
+  color: transparent;              /* fallback */
+  /*color: #059669;*/
+  font-weight: bold;
+  font-size: 1.5rem; /* optional: adjust size */
+}
+
+.home-icon svg {
+  margin-right: 6px;
+}
+
+
+/* Footer */
+.footer, .social_media{
+  /*background: #000;*/
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: #fff;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+  width: 100%;
+/*  border-bottom: 2px solid #333;*/
+}
+
+.footer_items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 1rem;        /* equal left & right padding */
+  margin: 0 auto; /* center within screen */
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer_links h4 {
+  color: #ff4081;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer_links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer_links a:hover {
+  color: #667eea;
+}
+
+
+.social_media {
+  background: black;
+  padding: 0;
+  text-align: center;
+  width: 100%; /* Full viewport width */
+   /* box-sizing: border-box;
+    border-top: 2px solid #333;*/
+}
+
+
+.social_icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.social_icon--link {
+  font-size: 1.2rem;
+  background-image: linear-gradient(to top, #ff0844, #ffb199);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.website_right {
+  font-size: .9rem;
+  background-image: linear-gradient(to top, #ff0844, #ffb199);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: .5rem;
+}
+#social-logo i, 
+#social-logo span {
+  font-size: 1.2rem;
+  background-image: linear-gradient(to top, #ff0844, #ffb199);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+        /* Footer adjustments */
+@media (max-width: 900px) {
+  .footer_items {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_items {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+}
+  
