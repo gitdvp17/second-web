@@ -4,6 +4,16 @@
             box-sizing: border-box;
         }
 
+:root {
+  --shadow-x: 4px;
+  --shadow-y: 4px;
+  --shadow-blur: 10px;
+
+  --primary-gradient: linear-gradient(to top, #ff0844, #ffb199);
+  --accent-gradient: linear-gradient(to top, #ff0844, #ffb199);
+  --text-gradient: linear-gradient(to top, #ff0844, #ffb199);
+}
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -40,6 +50,7 @@
   padding: 0 1rem;
 }
 
+/*
 #nav-logo {
   background-image: linear-gradient(to top, #ff0844, #ffb199);
   background-clip: text;
@@ -49,6 +60,39 @@
   cursor: pointer;
   font-size: 2rem;
   font-weight: 700;
+}
+
+*/
+
+/* Logo container */
+#nav-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  gap: 10px; /* space between logo and text */
+  padding: 5px 10px;
+  border-radius: 8px;
+
+  /* Gradient background matching navbar 
+  background: linear-gradient(90deg, #ff0844, #ffb199); */
+  transition: transform 0.3s ease;
+}
+
+/* Logo image */
+#nav-logo .logo-img {
+  width: 50px; /* adjust size as needed */
+  height: 60px; /*auto;*/
+  display: block;
+}
+
+/* Text with transparent gradient effect */
+#nav-logo span {
+  background: var(--text-gradient); /* or repeat navbar gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #nav-logo i {
