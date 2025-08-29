@@ -453,6 +453,7 @@ html {
   .r_grid_2,
   .r_grid_3 {
     padding: 1.2rem;
+    min-height: 600px;
   }
 
   .s_grid h1,
@@ -463,7 +464,7 @@ html {
   }
 
   .image-wrapper {
-    height: 350px;
+    height: 320px !;
   }
 
   .menu-links {
