@@ -435,7 +435,9 @@ html {
 
 /* ---- Social Media ---- */
 .social_media {
-  padding: 1.5rem;
+  padding: 0; /* Remove all padding */
+  margin: 0; /* Remove any margin */
+  height: auto;
   text-align: center;
   background: linear-gradient(135deg, #0f0f23, #1a1a2e);
   border-top: 1px solid rgba(102, 126, 234, 0.2);
@@ -448,7 +450,8 @@ html {
   align-items: center;
   gap: 1rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0rem auto;
+  padding: 0.8rem 1.5rem; /* Move padding here instead */
 }
 
 .social_icons {
@@ -472,7 +475,7 @@ html {
 }
 
 .website_right {
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
   font-size: 0.9rem;
   background: var(--text-gradient);
   -webkit-background-clip: text;
@@ -481,8 +484,8 @@ html {
 }
 
 .website_right--text .logo-img {
-    width: 250px;
-    height: 90px;
+    width: 200px;
+    height: 60px;
     object-fit: contain;
     filter: brightness(1.2);
     -webkit-background-clip: text;
@@ -499,12 +502,12 @@ html {
 
 .social_logo #nav-logo {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .social_logo .logo-img {
-    width: 60px;
-    height: 45px;
+    width: 50px;
+    height: 38px;
     border-radius: 50%;
 }
 
@@ -540,7 +543,7 @@ html {
   /* Logo image */
 #nav-logo .logo-img {
   width: 85px; /* adjust size as needed */
-  height: 50px; /*auto;*/
+  height: 60px; /*auto;*/
   display: block;
   object-fit: cover;
   border-radius: 50%;
@@ -549,7 +552,7 @@ html {
 /* Text with transparent gradient effect */
 #nav-logo span {
   width: 155px; /* adjust size as needed */
-  height: 50px; /*auto;*/
+  height: 60px; /*auto;*/
   font-size: .8rem;
   background: var(--text-gradient); /* or repeat navbar gradient */
   -webkit-background-clip: text;
@@ -616,9 +619,21 @@ html {
     gap: 1.5rem;
   }
 
+  .social_media {
+    padding: 0.6rem 1rem; /* Even more compact on mobile */
+  }
+
   .social_media--wrap {
     flex-direction: column;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+  }
+  .social_icons {
     gap: 1rem;
+  }
+  
+  .website_right {
+    margin-top: 0.2rem;
   }
 }
 
