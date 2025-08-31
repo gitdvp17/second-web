@@ -279,6 +279,35 @@ html {
   transform: scale(1.08);
 }
 
+.client-sectors {
+    font-size: 0.6vw;
+    font-weight: 600;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+}
+
+.client-sectors li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.client-sectors li::before {
+    content: "●";
+    color: #FF4060;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.client-sectors li strong {
+    color: #2c3e50;
+}
+
 /* ---- Paragraphs ---- */
 .s_grid p,
 .r_grid_1 p,
@@ -447,6 +476,16 @@ html {
   font-size: 0.9rem;
   background: var(--text-gradient);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.website_right--text .logo-img {
+    width: 250px;
+    height: 90px;
+    object-fit: contain;
+    filter: brightness(1.2);
+    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }

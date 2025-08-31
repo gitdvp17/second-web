@@ -332,11 +332,21 @@
     border-top: 2px solid #333;*/
 }
 
+/* Add the wrapper container for row layout */
+.social_media--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .social_icons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: .5rem;
 }
 .social_icon--link {
   font-size: 1.2rem;
@@ -350,6 +360,16 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: .5rem;
+}
+
+.website_right--text .logo-img {
+    width: 250px;
+    height: 90px;
+    object-fit: contain;
+    filter: brightness(1.2);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /*
