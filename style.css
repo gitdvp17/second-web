@@ -90,7 +90,7 @@ html {
 
 /* Text with transparent gradient effect */
 #nav-logo span {
-  background: var(--text-gradient); /* or repeat navbar gradient */
+  background: #4794DA; /*var(--text-gradient);*/ /* or repeat navbar gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -154,14 +154,14 @@ html {
   cursor: pointer;
   font-weight: 600;
   color: #fff;
-  background: var(--primary-gradient);
-  box-shadow: 0 4px 15px rgba(255, 8, 68, 0.3);
+  background: #4794DA; /*var(--primary-gradient);*/
+  box-shadow: 0 4px 15px rgba(71, 148, 218, 0.4);
   transition: all 0.3s ease;
 }
 
 .menu-links button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 8, 68, 0.4);
+  box-shadow: 0 6px 20px rgba(71, 148, 218, 0.4);
 }
 
 .nav-part2 i {
@@ -240,7 +240,7 @@ html {
 .r_grid_2 h1 span,
 .r_grid_3 h1 span {
   font-weight: 700;
-  background: var(--text-gradient);
+  background: #4794DA; /*var(--text-gradient);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -327,7 +327,7 @@ html {
 .r_grid_2 p span,
 .r_grid_3 p span {
   font-weight: 600;
-  background: var(--text-gradient);
+  background: #4794DA; /*var(--text-gradient);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -354,8 +354,8 @@ html {
   font-weight: 600;
   font-size: 0.9rem;
   color: white;
-  background: var(--primary-gradient);
-  box-shadow: 0 4px 15px rgba(255, 8, 68, 0.3);
+  background: #4794DA; /*var(--primary-gradient);*/
+  box-shadow: 0 4px 15px rgba(71, 148, 218, 0.4);;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
@@ -365,7 +365,7 @@ html {
 .r_grid_2 button:hover,
 .r_grid_3 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 8, 68, 0.4);
+  box-shadow: 0 6px 20px rgba(71, 148, 218, 0.4);
 }
 
 /* =========================================================
@@ -463,7 +463,7 @@ html {
 .social_icon--link {
   font-size: 1.5rem;
   text-decoration: none;
-  background: var(--text-gradient);
+  background: #4794DA; /*var(--text-gradient);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

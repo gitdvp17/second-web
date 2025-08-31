@@ -99,7 +99,7 @@
 
 /* Text with transparent gradient effect */
 #nav-logo span {
-  background: var(--text-gradient); /* or repeat navbar gradient */
+  background: #4794DA; /*var(--text-gradient);*/ /* or repeat navbar gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -120,7 +120,7 @@
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  background: linear-gradient(to top, #ff0844, #ffb199);
+  background: #4794DA; /*linear-gradient(to top, #ff0844, #ffb199);*/
   -webkit-background-clip: text;   /* clips bg to text shape */
   -webkit-text-fill-color: transparent; /* makes the text take bg as color */
   background-clip: text;           /* for Firefox */
