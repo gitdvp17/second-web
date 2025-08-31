@@ -537,6 +537,27 @@ html {
     padding: 0 1rem;
   }
 
+  /* Logo image */
+#nav-logo .logo-img {
+  width: 85px; /* adjust size as needed */
+  height: 50px; /*auto;*/
+  display: block;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Text with transparent gradient effect */
+#nav-logo span {
+  width: 155px; /* adjust size as needed */
+  height: 50px; /*auto;*/
+  font-size: .8rem;
+  background: var(--text-gradient); /* or repeat navbar gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  align-content: center;
+}
+
   .content {
     grid-template-columns: 1fr;
     grid-template-areas: "a" "b" "c" "d";
