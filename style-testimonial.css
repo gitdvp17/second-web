@@ -12,6 +12,7 @@
   --primary-gradient: linear-gradient(to top, #ff0844, #ffb199);
   --accent-gradient: linear-gradient(to top, #ff0844, #ffb199);
   --text-gradient: linear-gradient(to top, #ff0844, #ffb199);
+  --text-gradient: linear-gradient(to top, #ff0844, #ffb199);
 }
 
         body {
@@ -80,13 +81,22 @@
   /* Gradient background matching navbar 
   background: linear-gradient(90deg, #ff0844, #ffb199); */
   transition: transform 0.3s ease;
+  overflow: hidden;
+  color: white;
 }
 
 /* Logo image */
 #nav-logo .logo-img {
-  width: 50px; /* adjust size as needed */
+  width: 85px; /* adjust size as needed */
   height: 60px; /*auto;*/
   display: block;
+  background-clip: text;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#nav-logo:hover {
+  transform: scale(1.05);
 }
 
 /* Text with transparent gradient effect */
@@ -94,6 +104,7 @@
   background: var(--text-gradient); /* or repeat navbar gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 
@@ -267,6 +278,27 @@
   -webkit-text-fill-color: transparent;
   margin-top: .5rem;
 }
+
+/*
+#social-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+  */
+
+.social_logo #nav-logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.social_logo .logo-img {
+    width: 60px;
+    height: 45px;
+    border-radius: 50%;
+}
+
 #social-logo i, 
 #social-logo span {
   font-size: 1.2rem;
