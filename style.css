@@ -94,10 +94,11 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-size: 1.2rem;
 }
 
 #nav-logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /*
@@ -573,8 +574,8 @@ html {
 
   /* Logo image */
 #nav-logo .logo-img {
-  width: 85px; /* adjust size as needed */
-  height: 50px; /*auto;*/
+  width: 40px; /* adjust size as needed */
+  height: 32px; /*auto;*/
   display: block;
   object-fit: cover;
   border-radius: 50%;
@@ -582,9 +583,9 @@ html {
 
 /* Text with transparent gradient effect */
 #nav-logo span {
-  width: 155px; /* adjust size as needed */
-  height: 60px; /*auto;*/
-  font-size: .8rem;
+  /*width: 155px;  adjust size as needed */
+  /*height: 60px; auto;*/
+  font-size: .9rem;
   background: #4794DA; /*var(--text-gradient);*/ /* or repeat navbar gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
