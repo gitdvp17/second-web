@@ -99,6 +99,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+    font-size: 1.2rem;
 }
 
 
@@ -313,7 +314,30 @@ social-logo {
 }
 
 @media (max-width: 600px) {
+
+  .nav {
+    height: 60px;
+    padding: 0 1rem;
+  }
+
   .footer_items {
     grid-template-columns: 1fr; /* 1 column on mobile */
+  }
+
+  .social_media {
+    padding: 0.6rem 1rem; /* Even more compact on mobile */
+  }
+
+  .social_media--wrap {
+    flex-direction: column;
+    gap: .5rem;
+    padding: 0.5rem 1rem;
+  }
+  .social_icons {
+    gap: 1rem;
+  }
+  
+  .website_right {
+    margin-top: 0.2rem;
   }
 }

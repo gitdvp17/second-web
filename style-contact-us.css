@@ -98,6 +98,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  
 }
 
 #nav-logo:hover {
@@ -295,6 +296,17 @@
   color: #ff4081;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
+}
+
+.footer_links h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--blue-gradient); /*linear-gradient(45deg, #FF4060, #ffb199);*/
+    border-radius: 2px;
 }
 
 .footer_links a {
