@@ -352,10 +352,14 @@ html {
   border-radius: 25px;
   cursor: pointer;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: white;
   background: #4794DA; /*var(--primary-gradient);*/
-  box-shadow: 0 4px 15px rgba(71, 148, 218, 0.4);;
+  /*box-shadow: 0 4px 15px rgba(71, 148, 218, 0.4);*/
+  box-shadow: 
+    0 8px 15px rgba(0, 0, 0, 0.25),   /* main drop shadow (depth) */
+    0 0 15px rgba(71, 148, 218, 0.6),   /* outer halo glow */
+    0 4px 20px rgba(71, 148, 218, 0.5); /* soft shadow underneath */;
   transition: all 0.3s ease;
   white-space: nowrap;
 }
@@ -365,8 +369,35 @@ html {
 .r_grid_2 button:hover,
 .r_grid_3 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(71, 148, 218, 0.4);
+  box-shadow: /*0 6px 20px rgba(71, 148, 218, 0.4);*/
+    0 12px 25px rgba(0, 0, 0, 0.3),    /* stronger depth */
+    0 6px 25px rgba(71, 148, 218, 0.5), /* brighter glow */
+    0 0 20px rgba(71, 148, 218, 0.8);   /* intense halo */
 }
+
+.s_grid .button-wrapper .check-out span,
+.r_grid_1 .button-wrapper .check-out span,
+.r_grid_2 .button-wrapper .check-out span,
+.r_grid_3 .button-wrapper .check-out span{
+ color: #4794DA;
+ font-weight: 800;
+}
+
+/*
+.r_grid_1 .button-wrapper .check-out span{
+ color: #4794DA;
+ font-weight: 800;
+}
+.r_grid_2 .button-wrapper .check-out span{
+ color: #4794DA;
+ font-weight: 800;
+}
+
+.r_grid_3 .button-wrapper .check-out span{
+ color: #4794DA;
+ font-weight: 800;
+}
+ */
 
 /* =========================================================
    Footer
@@ -543,7 +574,7 @@ html {
   /* Logo image */
 #nav-logo .logo-img {
   width: 85px; /* adjust size as needed */
-  height: 60px; /*auto;*/
+  height: 50px; /*auto;*/
   display: block;
   object-fit: cover;
   border-radius: 50%;
@@ -554,7 +585,7 @@ html {
   width: 155px; /* adjust size as needed */
   height: 60px; /*auto;*/
   font-size: .8rem;
-  background: var(--text-gradient); /* or repeat navbar gradient */
+  background: #4794DA; /*var(--text-gradient);*/ /* or repeat navbar gradient */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -586,6 +617,14 @@ html {
   .image-wrapper {
     height: 320px !;
   }
+
+  .client-sectors {
+    font-size: 0.8rem;
+  }
+
+  .client-sectors li {
+    font-size: 0.8rem;
+}
 
   .menu-links {
     display: none;
