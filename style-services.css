@@ -298,6 +298,17 @@
   font-size: 1.1rem;
 }
 
+.footer_links h4::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--blue-gradient); /*linear-gradient(45deg, #FF4060, #ffb199);*/
+    border-radius: 2px;
+}
+
 .footer_links a {
   color: #ccc;
   text-decoration: none;
@@ -307,6 +318,14 @@
 
 .footer_links a:hover {
   color: #667eea;
+}
+
+
+.footer_links a:hover::before {
+    content: "→";
+    position: absolute;
+    left: -8px;
+    color: #FF4060; 
 }
 
 .social_media {
@@ -481,7 +500,18 @@
     height: 60px;
     padding: 0 1rem;
   }
-  
+
+  #nav-logo span {
+  /*width: 155px;  adjust size as needed */
+  /*height: 60px; auto;*/
+  font-size: .9rem;
+  background: #4794DA; /*var(--text-gradient);*/ /* or repeat navbar gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  align-content: center;
+}
+
   .footer_items {
     grid-template-columns: 1fr; /* 1 column on mobile */
   }

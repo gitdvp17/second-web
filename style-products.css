@@ -320,6 +320,17 @@ social-logo {
     padding: 0 1rem;
   }
 
+  #nav-logo span {
+  /*width: 155px;  adjust size as needed */
+  /*height: 60px; auto;*/
+  font-size: .9rem;
+  background: #4794DA; /*var(--text-gradient);*/ /* or repeat navbar gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  align-content: center;
+}
+
   .footer_items {
     grid-template-columns: 1fr; /* 1 column on mobile */
   }
