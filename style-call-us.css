@@ -174,14 +174,15 @@ body {
   gap: 2rem;
   padding: 2rem;
   align-items: center; /* Vertically center the grid items */
-  color: #f4f4f4;
+  /*color: #f4f4f4;*/
 }
 
 /* Container for the icons and labels */
 .icon-contents {
   display: flex; /* Use flexbox to stack the wrappers */
   flex-direction: column;
-  gap: 1rem; /* Space between each icon-label pair */
+  justify-content: center;
+  gap: 1.5rem; /* Space between each icon-label pair */
   padding: 1rem; /* Add some padding for visual spacing */
   margin: 1rem 0;
   border: 2px solid #333;
@@ -189,7 +190,7 @@ body {
   background: linear-gradient(to right, #90b6d9, #ffb28a);
   box-shadow: var(--shadow-x) var(--shadow-y) var(--shadow-blur) rgba(0, 0, 0, 0.3);
   padding: 1rem;
-  height: 15vw;
+  height: auto;
 }
 
 /* This new class wraps each icon and its label */
@@ -201,7 +202,8 @@ body {
 }
 
 .image-box img {
-  height: 15vw;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -398,6 +400,10 @@ social-logo {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     align-content: center;
+  }
+
+  .contact-contents {
+    grid-template-columns: 1fr; /* Stack the columns on small screens */
   }
 
   .footer_items {
