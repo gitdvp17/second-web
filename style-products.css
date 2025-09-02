@@ -194,6 +194,7 @@
 }
 
 .footer_links h4 {
+  position: relative; 
   color: #ff4081;
   margin-bottom: 0.5rem;
   font-size: 1.1rem;
