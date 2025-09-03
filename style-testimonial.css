@@ -335,4 +335,21 @@ body {
     padding: 0 20px;
     text-align: center;
   }
+
+  .social_media {
+    padding: 0.6rem 1rem; /* Even more compact on mobile */
+  }
+
+  .social_media--wrap {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  .social_icons {
+    gap: 1rem;
+  }
+
+  .website_right {
+    margin-top: 0.2rem;
+  }
 }
